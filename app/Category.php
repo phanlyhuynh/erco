@@ -22,4 +22,22 @@ class Category extends Model
     {
         return $this->belongsTo('App\Category', 'parent_id');
     }
+
+    public function scopeWithImages($query, $id = null)
+    {
+        if($id != null){
+
+            $product = $this->where('id', $id)->with(['products'=>function($query) {
+                $query->with('images')->first();
+            }])->get();
+        }
+        else {
+
+            $product = $this->with(['products'=>function($query) {
+                $query->with('images')->first();
+            }])->get();
+        }
+
+        return $product;
+    }
 }

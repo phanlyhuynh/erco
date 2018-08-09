@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.home');
-});
+//Route::get('/', function () {
+//    return view('frontend.home');
+//});
 
 Route::group(['prefix' => '/admin', 'middleware' => 'CheckRole'], function ()
 {
@@ -27,5 +27,18 @@ Route::group(['prefix' => '/admin', 'middleware' => 'CheckRole'], function ()
 });
 Auth::routes();
 
-Route::get('/trangchu', 'HomeController@index')->name('trangchu');
-Route::get('/dangnhap', 'Frontend\HomeController@login');
+//Route::get('/trangchu', 'HomeController@index')->name('trangchu');
+//Route::get('/dangnhap', 'Frontend\HomeController@login');
+
+Route::get('/home1', 'PageController@home1')->name('trangchu');
+Route::get('/sanphamchitiet/{id}', 'PageController@detail')->name('sanphamchitiet');
+Route::get('/showsanpham/{id}', 'PageController@showcate')->name('showcate');
+Route::get('/deletecart/{id}', 'PageController@delete')->name('deletecart');
+Route::name('search')->get('/search', 'PageController@search');
+Route::post('/order', 'PageController@postorder')->name('order');
+Route::get('/shoplist', 'PageController@shoplist');
+
+Route::get('/shopping-cart', 'PageController@shoppingcart');
+Route::get('/viewcart','PageController@viewcart')->name('muahang');
+Route::post('/addToCart','PageController@addToCart')->name('addToCart');
+Route::get('/{slug}', 'PageController@showDetailPost');
