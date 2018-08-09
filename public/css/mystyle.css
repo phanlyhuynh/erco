@@ -1,0 +1,157 @@
+.app .layout .side-nav .side-nav-inner .side-nav-menu .ps-scrollbar-x-rail{
+    left: 0px;
+    bottom: 0px;
+}
+.app .layout .side-nav .side-nav-inner .side-nav-menu .ps-scrollbar-x-rail .ps-scrollbar-x{
+    left: 0px;
+    width: 0px;
+}
+.app .layout .side-nav .side-nav-inner .side-nav-menu .ps-scrollbar-y-rail{
+    top: 0px;
+    right: 0px;
+    height: 597px;
+}
+.app .layout .side-nav .side-nav-inner .side-nav-menu .ps-scrollbar-x-rail .ps-scrollbar-y{
+    top: 0px;
+    height: 444px;
+}
+.main-content .container-fluid .row .card .card-body .goal{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: -1;
+}
+.main-content .container-fluid .row .card .card-body .goal .goal1{
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    overflow:hidden;
+    pointer-events:none;
+    visibility:hidden;
+    z-index:-1;
+}
+.main-content .container-fluid .row .card .card-body .goal .goal1 .goal2{
+    position:absolute;
+    width:1000000px;
+    height:1000000px;
+    left:0;
+    top:0;
+}
+.main-content .container-fluid .row .card .card-body .goal .goal3{
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    overflow:hidden;
+    pointer-events:none;
+    visibility:hidden;
+    z-index:-1;
+}
+.main-content .container-fluid .row .card .card-body .goal .goal3 .goal4{
+    position:absolute;
+    width:200%;
+    height:200%;
+    left:0;
+    top:0;
+}
+.main-content .container-fluid .row .card .card-body #goal-chart{
+    height: 200px;
+    display: block;
+    width: 274px;
+}
+.header-container .nav-logo .logo-dark{
+    background-image: url('../images/logo/logo.png');
+}
+.header-container .nav-logo .logo-white{
+    background-image: url("../images/logo/logo-white.png");
+}
+.header-container .ps-scrollbar-x-rail{
+    left: 0px;
+    bottom: 0px;
+}
+.header-container .ps-scrollbar-x-rail .ps-scrollbar-x{
+    left: 0px;
+    width: 0px;
+}
+.header-container .ps-scrollbar-y-rail{
+    top: 0px;
+    right: 0px;
+}
+.header-container .ps-scrollbar-y-rail .ps-scrollbar-y{
+    top: 0px;
+    height: 0px;
+}
+.header-container .nav-right .list-media{
+    max-height: 300px;
+}
+.pace-done .pace .pace-progress{
+    transform: translate3d(100%, 0px, 0px);
+}
+@-webkit-keyframes chartjs-render-animation {
+    from {
+        opacity: 0.99
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes chartjs-render-animation {
+    from {
+        opacity: 0.99
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.chartjs-render-monitor {
+    -webkit-animation: chartjs-render-animation 0.001s;
+    animation: chartjs-render-animation 0.001s;
+}
+.jqstooltip {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    visibility: hidden;
+    background: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    color: white;
+    font: 10px arial, san serif;
+    text-align: left;
+    white-space: nowrap;
+    padding: 5px;
+    border: 1px solid white;
+    z-index: 10000;
+}
+
+.jqsfield {
+    color: white;
+    font: 10px arial, san serif;
+    text-align: left;
+}
+.errors_validate{
+    color: red;
+}
+.avatar{
+    width: 40px;
+    height: 40px;
+}
+#image_preview{
+    border: 1px solid black;
+    padding: 10px;
+}
+#image_preview img{
+    width: 200px;
+    padding: 5px;
+}
